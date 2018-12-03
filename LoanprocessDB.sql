@@ -20,3 +20,7 @@ CREATE TABLE LoanProducts (
 idProduct int PRIMARY KEY,
 productType varchar(50) NOT NULL,
 revolving int NOT NULL); -- лучше bit
+
+                  
+INSERT INTO Loanproducts (
+VALUES 
