@@ -15,3 +15,8 @@ loantype varchar(50) NOT NULL,
 loansize int NOT NULL,
 loangoal varchar(50),
 appstatus varchar(50)); --или лучше bit
+                  
+CREATE TABLE LoanProducts (
+idProduct int PRIMARY KEY,
+productType varchar(50) NOT NULL,
+revolving int NOT NULL); -- лучше bit
