@@ -22,5 +22,11 @@ productType varchar(50) NOT NULL,
 revolving int NOT NULL); -- лучше bit
 
                   
-INSERT INTO Loanproducts (
-VALUES 
+INSERT INTO Loanproducts (productType, revolving)
+VALUES (rcl, 1);
+INSERT INTO Loanproducts (productType, revolving)
+VALUES (ncl, 0);
+INSERT INTO Loanproducts (productType, revolving)
+VALUES (pv loan, 0);
+INSERT INTO Loanproducts (productType, revolving)
+VALUES (overdraft, 1);
