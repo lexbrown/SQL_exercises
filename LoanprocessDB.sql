@@ -1,8 +1,7 @@
-CREATE DATABASE loanprocessdb
-GO;
+CREATE DATABASE loanprocessdb;
+-- GO после каждого блока команд
 
-USE loanprocessdb
-GO;
+USE loanprocessdb;
 
 CREATE TABLE Customers (
 custid int PRIMARY KEY,
