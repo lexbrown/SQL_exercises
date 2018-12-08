@@ -1,4 +1,7 @@
-CREATE DATABASE loanprocessdb;
+CREATE DATABASE loanprocessdb
+GO;
+
+USE loanprocessdb;
 
 CREATE TABLE Customers (
 custid int PRIMARY KEY,
