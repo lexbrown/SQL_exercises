@@ -1,0 +1,2 @@
+SELECT *, CASE WHEN `Default function` > 1 THEN 'Это дефолт, детка!' ELSE 'Всё нормуль' END DefaultEvent 
+FROM geshbank.loan_accounts;
