@@ -26,3 +26,10 @@ SELECT *
 FROM (SELECT *, CASE WHEN `Default function` > 1 THEN 'Это дефолт, детка!' ELSE 'Всё нормуль' END DefaultEvent 
 FROM geshbank.loan_accounts) AS tabl1
 WHERE DefaultEvent NOT LIKE '%дефолт%';
+
+
+SELECT *, EndDate - BeginDate AS DurRange, CASE WHEN (EndDate - BeginDate) < 51 THEN 'Short term' 
+WHEN (EndDate - BeginDate) BETWEEN 51 AND 100 THEN 'Medium term'
+ELSE 'Long term'
+END Duration
+FROM geshbank.loan_accounts
