@@ -36,4 +36,7 @@ FROM geshbank.loan_accounts;
 
 
 select *, avg(price) over() as try, row_number() over(partition by model) as mdeee
-from pc;
+from pc; -- БД Компьютерный магазин
+
+select *, avg(price) over() as try, row_number() over(partition by model order by price desc) as mdeee
+from pc; -- БД Компьютерный магазин
