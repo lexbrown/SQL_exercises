@@ -32,4 +32,8 @@ SELECT *, EndDate - BeginDate AS DurRange, CASE WHEN (EndDate - BeginDate) < 51 
 WHEN (EndDate - BeginDate) BETWEEN 51 AND 100 THEN 'Medium term'
 ELSE 'Long term'
 END Duration
-FROM geshbank.loan_accounts
+FROM geshbank.loan_accounts;
+
+
+select *, avg(price) over() as try, row_number() over(partition by model) as mdeee
+from pc;
