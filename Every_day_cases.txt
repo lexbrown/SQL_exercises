@@ -1,4 +1,4 @@
---Работа с базой данный Гешефтсбанк, MySQL
+--Работа с базой данный Гешефтсбанк, MySQL 1
 
 
 SELECT *, CASE WHEN `Default function` > 1 THEN 'Это дефолт, детка!' ELSE 'Всё нормуль' END DefaultEvent 
